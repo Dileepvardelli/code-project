@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>HTML Login Form</title>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+ 
+<style>
+    html body{
+    background-color: rgb(7, 37, 61);
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    background: white;
+    flex-direction: column;
+    margin: 0;
+}
+
+.main {
+    background-color:white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    transition: transform 0.2s;
+    width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #0a0a0a;
+}
+h2{
+    font-family:monospace;  
+}
+
+label {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #555;
+    font-weight: bold;
+}
+
+
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #219db0;
+    width: 100%;
+    font-size: 16px;
+}
+.fa-google {
+  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+</style>
+</head>
+<body>
+    
+      <div class="main">
+            <h1> Login </h1>
+            <h2>Enter your  credentials</h2>
+            <form onsubmit="handleLogin(event)">
+                  <label for="first">Username:</label>
+                  <input type="text"  id="first"  name="first" placeholder="Enter Username" required>
+                   <label for="password">Password:</label>
+                  <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                         
+                  <div class="wrap">
+                    <button type="submit">Login</button>
+                  </div>
+            </form>
+            <p>Not registered?
+                  <a href="signup.html"style="text-decoration: none;">Sign up</a>
+            </p>
+            <a href="https://myaccount.google.com"><i class="fab fa-google fa-2x"></i></a>
+      </div>
+    
+</body>
+<script>
+    function handleLogin(event) {
+    event.preventDefault(); // Prevent the form from submitting the traditional way
+        // Add your login validation logic here
+        // If login is successful, redirect to home page
+        window.location.href = 'home.html'; // Replace with your actual home page URL
+    }
+</script>
+
+</html>

@@ -1,0 +1,383 @@
+
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    
+}
+
+#companies {
+    margin: 40px 0 20px 40px;
+    /* background-color: #007BFF; */
+}
+
+#companies h1 {
+    margin-bottom: 20px;
+}
+
+.company_images {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding-left: 20px;
+}
+.company {
+    width: 200px;
+    height: 150px;
+    margin: 20px;
+}
+#logo {
+    height: 50px;
+    width: 50px;
+    margin: 5px 5px 5px 50px;
+}
+#logo_name {
+    margin-right: 620px;
+}
+
+#search_icon {
+    margin-top: -7px;
+    border-radius: 8px 0 0 8px;
+    width: 50px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: white;
+    margin-right: -10px;
+}
+nav {
+    background-color: #333333;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+}
+nav ul {
+    display: flex;
+    justify-content: right;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.ulL a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+header nav ul li a:hover
+{
+    color: rgb(151, 98, 13);
+
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+.h
+{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+}
+.imag1
+{
+    height: 100%;
+    width: 100px;
+}
+
+#courses {
+    margin: 50px 0 30px 0;
+}
+#courses .h
+{
+ background-color: yellow;
+}
+
+.card-container {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content:left; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px 0 0 170px;
+    background: radial-gradient(circle, rgba(77, 13, 141, 0.2) 0%, rgb(20, 51, 130) 100%);
+}
+
+#searchInput {
+    border-radius: 0 8px 8px 0;
+    width: 200px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 500px;
+    transition: transform 0.3s;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: black;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+.card-content{
+    padding-left: 10px;
+    
+}
+.card-content a {
+    background-color: #007BFF;
+    color: white;
+}
+.card-content a:hover {
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 12px 8px 12px;
+}
+.carousel-item active
+{
+    height:100px;
+    width:100px;
+}
+.btn
+{
+    padding: 100px;
+    margin-top: 10px;
+    justify-content: left;
+}
+
+#assignment {
+
+    background: radial-gradient(circle, rgba(77, 13, 141, 0.2) 0%, rgb(20, 51, 130) 100%);
+
+    margin-top: -30px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+#assignment .hw
+{
+    margin-top: -25px;
+    font-size: 50px;
+    background-color: yellowgreen;
+
+}
+
+#assignment button {
+    padding: 10px;
+    border-radius: 8px;
+}
+#assignment .container1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px 0 0 170px;
+    
+}
+
+#achievements {
+    margin: 50px 50px 50px 30px;
+}
+.achievements_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px 0 0 170px;
+}
+.indiv_card {
+    padding: 15px;
+    background-color: #29a8da;
+    font-size: 20px;
+    width: 400px;
+    border-radius: 8px;
+}
+.profile_img {
+    width: 100px;
+}
+
+.card_head {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
+/*footer*/
+footer {
+    background-color:rgb(58, 58, 58);
+    color: white;
+    padding: 10px 0;
+
+
+}
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    min-height: 2px;
+    margin: 20px 0;
+    padding: 20px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.footer-section h3 {
+    margin: 2px;
+
+}
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #007BFF;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s;
+}
+
+.social-icons img:hover {
+    opacity: 0.7;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background:blue;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .assgiment .ah {
+    text-align: center;
+  }
+  .bnt
+  {
+    justify-content: center;
+    margin-right: 100px;
+  }
+
+  .container1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    gap: 20px;
+    padding: 20px;
+}
+
+.hw
+{
+    text-align: center;
+    font-size: 35px;
+    font-family: italic;
+}
+
+.card1 {
+    background-color: rgb(199, 170, 131);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 350px;
+    transition: transform 0.3s;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: black;
+} 
+.card1:hover{
+    transform: translateY(-10px);
+
+}
+
+
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: black;
+}
+
+  
